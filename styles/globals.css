@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,300;1,300&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Alata', sans-serif;
+}
