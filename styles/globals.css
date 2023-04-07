@@ -4,7 +4,8 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  font-family: 'Josefin Sans', sans-serif;
-  font-family: 'Alata', sans-serif;
+@layer utilities {
+  .wrapper {
+    @apply max-w-screen-lg mx-auto px-4;
+  }
 }

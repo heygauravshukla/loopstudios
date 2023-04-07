@@ -16,11 +16,11 @@ export default function Home() {
         <link rel="shortcut icon" href="/favicon-32x32.png" type="image/x-icon" />
       </Head>
 
-      <div>
-        <div>
+      <div className="bg-[url('/mobile/image-hero.jpg')] bg-cover bg-center bg-no-repeat text-white relative min-h-screen">
+        <div className="wrapper py-6">
           <Header />
         </div>
-        <div>
+        <div className="wrapper absolute inset-0 grid place-items-center z-10">
           <Hero />
         </div>
       </div>

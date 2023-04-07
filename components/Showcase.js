@@ -53,7 +53,7 @@ const creationsCards = [
 
 const Showcase = () => {
     return (
-        <section>
+        <section className="wrapper">
             <h3>Our creations</h3>
             <button>See all</button>
             <div>

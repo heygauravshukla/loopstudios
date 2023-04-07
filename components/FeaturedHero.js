@@ -2,10 +2,10 @@ import Image from "next/image"
 
 const FeaturedHero = () => {
     return (
-        <section>
+        <section className="wrapper">
             <picture>
-                <source media="(min-width: 650px)" alt="Hero Image" srcSet="/desktop/image-hero.jpg" />
-                <Image priority className="w-full" src="/mobile/image-hero.jpg" alt="Hero Image" width={750} height={1300} />
+                <source media="(min-width: 650px)" alt="Hero Image" srcSet="/desktop/image-interactive.jpg" />
+                <Image priority className="w-full" src="/mobile/image-interactive.jpg" alt="Hero Image" width={654} height={448} />
             </picture>
             <div>
                 <h2>The leader in interactive VR</h2>
