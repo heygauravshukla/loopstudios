@@ -4,6 +4,25 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+
+  .creations-card {
+    @apply relative;
+  }
+
+  .creations-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.8883928571428571) 0%, rgba(0, 212, 255, 0) 100%);
+  }
+
+  .card-title {
+    @apply absolute bottom-4 left-4 text-white uppercase font-secondary text-3xl max-w-[9ch] font-light;
+  }
+}
+
 @layer utilities {
   .wrapper {
     @apply max-w-screen-lg mx-auto px-5;
