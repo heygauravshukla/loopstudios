@@ -1,0 +1,52 @@
+.section {
+    display: grid;
+    gap: 2rem;
+    max-width: var(--wrapper-size);
+    margin-inline: auto;
+    padding-block: 2rem;
+    padding-inline: var(--wrapper-padding);
+}
+
+.title {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.cardWrapper {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.card {
+    position: relative
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.8883928571428571) 0%, rgba(0, 212, 255, 0) 100%);
+}
+
+.cardTitle {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    color: white;
+    text-transform: uppercase;
+    max-width: 9ch;
+    font-size: 1.5rem;
+    font-weight: 300;
+    font-family: var(--ff-heading);
+}
+
+.button {
+    place-self: center;
+    font-size: 1rem;
+    padding: .5em 2.5em;
+    font-family: var(--ff-body);
+    text-transform: uppercase;
+    border: 1px solid black;
+    max-width: fit-content;
+}

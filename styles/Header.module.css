@@ -1,0 +1,67 @@
+.header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 30;
+}
+
+.header[data-header-active="true"] {
+    position: fixed;
+    inset-inline: 1rem;
+}
+
+.logoWrapper {
+    display: grid;
+    z-index: 30;
+}
+
+.logoWrapper img {
+    max-height: 1.5rem;
+    width: fit-content;
+}
+
+.navToggler {
+    width: 1.5rem;
+    height: 1.5rem;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 30;
+}
+
+.navToggler[data-nav-toggler-active="false"] {
+    background-image: url("/icon-hamburger.svg");
+}
+
+.navToggler[data-nav-toggler-active="true"] {
+    background-image: url("/icon-close.svg");
+}
+
+.navigationMenu {
+    min-height: 100vh;
+    padding-inline: 1rem;
+    position: fixed;
+    inset: 0;
+    color: gainsboro;
+    background-color: black;
+    font-size: 1.5rem;
+    font-weight: 300;
+    font-family: var(--ff-heading);
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    z-index: 20;
+    translate: 100%;
+    transition: all .3s ease-in-out;
+}
+
+.navigationMenu[data-nav-menu-active="false"] {
+    translate: 100%;
+}
+
+.navigationMenu[data-nav-menu-active="true"] {
+    translate: 0%;
+}

@@ -1,0 +1,9 @@
+.hero {
+    width: 100%;
+}
+
+.title {
+    border: 1px solid white;
+    font-size: 2rem;
+    padding: 1rem;
+}

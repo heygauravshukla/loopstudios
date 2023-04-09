@@ -1,6 +1,8 @@
 import Image from "next/image"
 import Link from "next/link"
 
+import styles from "@/styles/Showcase.module.css"
+
 const creationsCards = [
     {
         id: 1,
@@ -62,22 +64,22 @@ const creationsCards = [
 
 const Showcase = () => {
     return (
-        <section className="wrapper grid gap-8 py-6">
-            <h3 className="text-3xl uppercase font-secondary font-light text-center">Our creations</h3>
-            <div className="grid gap-6">
+        <section className={styles.section}>
+            <h3 className={styles.title}>Our creations</h3>
+            <div className={styles.cardWrapper}>
                 {
                     creationsCards.map((creationsCard) => (
-                        <Link href={creationsCard.destinationURL} key={creationsCard.id} className="creations-card">
-                            <picture className="card-image">
+                        <Link href={creationsCard.destinationURL} key={creationsCard.id} className={styles.card}>
+                            <picture>
                                 <source media="(min-width: 650px)" srcSet={creationsCard.imageURLDesktop} alt={creationsCard.cardTitle} />
                                 <Image src={creationsCard.imageURLMobile} alt={creationsCard.cardTitle} width={654} height={240} priority />
                             </picture>
-                            <span className="card-title">{creationsCard.cardTitle}</span>
+                            <span className={styles.cardTitle}>{creationsCard.cardTitle}</span>
                         </Link>
                     ))
                 }
             </div>
-            <button className="border border-black max-w-fit uppercase font-primary tracking-widest px-10 py-2 place-self-center">See all</button>
+            <button className={styles.button}>See all</button>
         </section>
     )
 }

@@ -1,0 +1,27 @@
+.intro {
+    color: white;
+    min-height: 100vh;
+    position: relative;
+    background-image: url("/mobile/image-hero.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.headerWrapper {
+    max-width: var(--wrapper-size);
+    padding-inline: var(--wrapper-padding);
+    margin-inline: auto;
+    padding-block: 1.5rem;
+}
+
+.heroWrapper {
+    position: absolute;
+    inset: 0;
+    z-index: 10;
+    display: grid;
+    place-items: center;
+    max-width: var(--wrapper-size);
+    padding-inline: var(--wrapper-padding);
+    margin-inline: auto;
+}

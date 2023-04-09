@@ -1,10 +1,12 @@
 import Head from "next/head";
 
-import FeaturedHero from "@/components/FeaturedHero";
-import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
+import FeaturedHero from "@/components/FeaturedHero";
 import Showcase from "@/components/Showcase";
+import Footer from "@/components/Footer";
+
+import styles from '@/styles/Home.module.css';
 
 export default function Home() {
   return (
@@ -16,11 +18,11 @@ export default function Home() {
         <link rel="shortcut icon" href="/favicon-32x32.png" type="image/x-icon" />
       </Head>
 
-      <div className="bg-[url('/mobile/image-hero.jpg')] bg-cover bg-center bg-no-repeat text-white relative min-h-screen">
-        <div className="wrapper py-6">
+      <div className={styles.intro}>
+        <div className={styles.headerWrapper}>
           <Header />
         </div>
-        <div className="wrapper absolute inset-0 grid place-items-center z-10">
+        <div className={styles.heroWrapper}>
           <Hero />
         </div>
       </div>
