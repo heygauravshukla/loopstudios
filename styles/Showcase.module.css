@@ -1,20 +1,19 @@
 .section {
     display: grid;
-    gap: 2rem;
+    gap: 3.2rem;
     max-width: var(--wrapper-size);
     margin-inline: auto;
-    padding-block: 2rem;
     padding-inline: var(--wrapper-padding);
 }
 
 .title {
-    font-size: 2rem;
+    font-size: 2.4rem;
     text-align: center;
 }
 
 .cardWrapper {
     display: grid;
-    gap: 1.5rem;
+    gap: var(--wrapper-padding);
 }
 
 .card {
@@ -31,22 +30,24 @@
 
 .cardTitle {
     position: absolute;
-    bottom: 1rem;
-    left: 1rem;
-    color: white;
+    bottom: var(--wrapper-padding);
+    left: var(--wrapper-padding);
+    color: var(--white);
     text-transform: uppercase;
     max-width: 9ch;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: 300;
     font-family: var(--ff-heading);
 }
 
 .button {
     place-self: center;
-    font-size: 1rem;
-    padding: .5em 2.5em;
-    font-family: var(--ff-body);
+    text-align: left;
+    padding: 1.6em 3.6em;
+    font-size: 1.1rem;
+    letter-spacing: .5rem;
     text-transform: uppercase;
-    border: 1px solid black;
+    font-family: var(--ff-body);
+    border: 1px solid var(--black);
     max-width: fit-content;
 }

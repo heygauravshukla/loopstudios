@@ -8,7 +8,7 @@
 
 .header[data-header-active="true"] {
     position: fixed;
-    inset-inline: 1rem;
+    inset-inline: var(--wrapper-padding);
 }
 
 .logoWrapper {
@@ -17,13 +17,13 @@
 }
 
 .logoWrapper img {
-    max-height: 1.5rem;
+    max-height: 2.4rem;
     width: fit-content;
 }
 
 .navToggler {
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 2rem;
+    height: 2rem;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -40,19 +40,19 @@
 
 .navigationMenu {
     min-height: 100vh;
-    padding-inline: 1rem;
+    padding-inline: var(--wrapper-padding);
     position: fixed;
     inset: 0;
-    color: gainsboro;
-    background-color: black;
-    font-size: 1.5rem;
+    color: var(--white);
+    background-color: var(--black);
+    font-size: 1.6rem;
     font-weight: 300;
     font-family: var(--ff-heading);
     text-transform: uppercase;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 1rem;
+    gap: 3.2rem;
     z-index: 20;
     translate: 100%;
     transition: all .3s ease-in-out;
@@ -64,4 +64,30 @@
 
 .navigationMenu[data-nav-menu-active="true"] {
     translate: 0%;
+}
+
+@media only screen and (min-width:70rem) {
+    .logoWrapper img {
+        max-height: 3.2rem;
+    }
+
+    .navToggler {
+        display: none;
+    }
+
+    .navigationMenu {
+        position: static;
+        min-height: fit-content;
+        flex-direction: row;
+        gap: 3.2rem;
+        color: var(--white);
+        background-color: transparent;
+        font-size: var(--fs-body);
+        font-weight: 400;
+        text-transform: none;
+    }
+
+    .navigationMenu[data-nav-menu-active="false"] {
+        translate: 0%;
+    }
 }

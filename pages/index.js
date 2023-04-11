@@ -27,7 +27,7 @@ export default function Home() {
         </div>
       </div>
 
-      <main>
+      <main className={styles.main}>
         <FeaturedHero />
         <Showcase />
       </main>

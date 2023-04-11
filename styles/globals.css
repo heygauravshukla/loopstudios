@@ -1,14 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,300;1,300&display=swap');
 
 :root {
-  --wrapper-size: 1200px;
-  --wrapper-padding: 1rem;
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 0%);
+  --dark-gray: hsl(0, 0%, 55%);
+  --very-dark-gray: hsl(0, 0%, 41%);
+
+  --wrapper-size: 1120px;
+  --wrapper-padding: 2.4rem;
 
   --ff-primary: 'Josefin Sans', sans-serif;
   --ff-secondary: 'Alata', sans-serif;
 
   --ff-heading: var(--ff-primary);
   --ff-body: var(--ff-secondary);
+
+  --fs-body: 1.5rem;
 }
 
 *,
@@ -16,15 +23,22 @@
 *::after {
   margin: 0;
   padding: 0;
+  font: inherit;
   box-sizing: border-box;
 }
 
-body {
-  font-family: var(--ff-body);
+html {
+  font-size: 62.5%;
 }
 
 html:focus-within {
   scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  font-size: var(--fs-body);
+  font-family: var(--ff-body);
 }
 
 button {
@@ -56,6 +70,7 @@ ul li {
 img,
 svg,
 picture {
+  display: block;
   width: 100%;
   height: auto;
 }

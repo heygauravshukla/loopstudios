@@ -3,7 +3,18 @@
 }
 
 .title {
-    border: 1px solid white;
-    font-size: 2rem;
-    padding: 1rem;
+    border: 1px solid var(--white);
+    font-size: 2.8rem;
+    padding: 2.6rem;
+}
+
+@media only screen and (min-width:70rem) {
+    .hero {
+        width: 52%;
+    }
+
+    .title {
+        font-size: 5rem;
+        padding: 4rem;
+    }
 }

@@ -1,7 +1,7 @@
 .intro {
-    color: white;
     min-height: 100vh;
     position: relative;
+    color: var(--white);
     background-image: url("/mobile/image-hero.jpg");
     background-size: cover;
     background-position: center;
@@ -12,7 +12,7 @@
     max-width: var(--wrapper-size);
     padding-inline: var(--wrapper-padding);
     margin-inline: auto;
-    padding-block: 1.5rem;
+    padding-block: 4rem;
 }
 
 .heroWrapper {
@@ -24,4 +24,26 @@
     max-width: var(--wrapper-size);
     padding-inline: var(--wrapper-padding);
     margin-inline: auto;
+}
+
+.main {
+    display: grid;
+    gap: 8rem;
+    padding-block: 8rem;
+}
+
+@media only screen and (min-width:70rem) {
+
+    .intro {
+        background-image: url("/desktop/image-hero.jpg");
+    }
+
+    .headerWrapper {
+        padding-block: 6.4rem;
+    }
+
+    .heroWrapper {
+        align-items: center;
+        justify-items: start;
+    }
 }
