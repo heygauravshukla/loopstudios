@@ -46,4 +46,9 @@
         align-items: center;
         justify-items: start;
     }
+
+    .main {
+        gap: 16rem;
+        padding-block: 16rem;
+    }
 }

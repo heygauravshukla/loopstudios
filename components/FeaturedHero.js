@@ -5,7 +5,7 @@ import styles from "@/styles/FeaturedHero.module.css"
 const FeaturedHero = () => {
     return (
         <section className={styles.section}>
-            <picture>
+            <picture className={styles.imagebox}>
                 <source media="(min-width: 650px)" alt="Hero Image" srcSet="/desktop/image-interactive.jpg" />
                 <Image priority src="/mobile/image-interactive.jpg" alt="Hero Image" width={654} height={448} />
             </picture>

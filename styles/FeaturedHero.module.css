@@ -20,3 +20,32 @@
     text-align: center;
     color: var(--dark-gray);
 }
+
+@media only screen and (min-width:70rem) {
+    .section {
+        position: relative;
+        grid-template-columns: repeat(12, 1fr);
+    }
+
+    .imagebox {
+        grid-column: 1/8;
+    }
+
+    .textbox {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        background-color: var(--white);
+        grid-column: 6/12;
+        padding-block-start: 9.5rem;
+        padding-inline-start: 9.5rem;
+    }
+
+    .textbox>* {
+        text-align: left;
+    }
+
+    .title {
+        font-size: 3.5rem;
+    }
+}
