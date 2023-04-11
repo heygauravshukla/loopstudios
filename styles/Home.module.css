@@ -32,7 +32,7 @@
     padding-block: 8rem;
 }
 
-@media only screen and (min-width:70rem) {
+@media only screen and (min-width:70em) {
 
     .intro {
         background-image: url("/desktop/image-hero.jpg");

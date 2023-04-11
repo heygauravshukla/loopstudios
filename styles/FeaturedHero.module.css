@@ -21,7 +21,7 @@
     color: var(--dark-gray);
 }
 
-@media only screen and (min-width:70rem) {
+@media only screen and (min-width:70em) {
     .section {
         position: relative;
         grid-template-columns: repeat(12, 1fr);

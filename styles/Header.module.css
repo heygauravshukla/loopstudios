@@ -66,7 +66,7 @@
     translate: 0%;
 }
 
-@media only screen and (min-width:70rem) {
+@media only screen and (min-width:70em) {
     .logoWrapper img {
         max-height: 3.2rem;
     }
@@ -85,9 +85,15 @@
         font-size: var(--fs-body);
         font-weight: 400;
         text-transform: none;
+        font-family: var(--ff-secondary);
     }
 
     .navigationMenu[data-nav-menu-active="false"] {
         translate: 0%;
+    }
+
+    .navigationMenu li a:is(:hover, :focus) {
+        padding-block-end: .8rem;
+        border-bottom: 2px solid var(--white);
     }
 }

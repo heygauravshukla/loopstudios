@@ -40,13 +40,15 @@
 .socialMenu li {
     width: 2.4rem;
     height: 2.4rem;
+    display: grid;
+    align-items: center;
 }
 
 .copyright {
     color: var(--dark-gray);
 }
 
-@media only screen and (min-width:70rem) {
+@media only screen and (min-width:70em) {
     .section {
         padding-block: 4.4rem;
     }
@@ -79,5 +81,10 @@
     .copyright {
         justify-self: end;
         grid-column: 2/3;
+    }
+
+    :is(.navMenu, .socialMenu) li a:is(:hover, :focus) {
+        padding-block-end: .8rem;
+        border-bottom: 2px solid var(--white);
     }
 }

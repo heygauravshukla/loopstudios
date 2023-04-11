@@ -71,7 +71,7 @@ const Showcase = () => {
                     creationsCards.map((creationsCard) => (
                         <Link href={creationsCard.destinationURL} key={creationsCard.id} className={styles.card}>
                             <picture>
-                                <source media="(min-width: 650px)" srcSet={creationsCard.imageURLDesktop} alt={creationsCard.cardTitle} />
+                                <source media="(min-width: 1120px)" srcSet={creationsCard.imageURLDesktop} alt={creationsCard.cardTitle} />
                                 <Image src={creationsCard.imageURLMobile} alt={creationsCard.cardTitle} width={654} height={240} priority />
                             </picture>
                             <span className={styles.cardTitle}>{creationsCard.cardTitle}</span>
